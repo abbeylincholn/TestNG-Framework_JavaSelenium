@@ -46,7 +46,7 @@ public void teardown(){
         driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys("123");
         driver.findElement(By.xpath("//button")).click();
-        WebElement invalidCredentialsElement = waitForElement( driver, "//p[text()=' Invalid credentials']");
+        WebElement invalidCredentialsElement = waitForElement( driver, "//p[text()='Invalid credentials']");
 
         // replace if else with assertion below
      /*   if (invalidCredentialsElement.isDisplayed()) {
