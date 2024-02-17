@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample Suite">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"></listener>
+        <listener class-name="org.testng.reporters.FailedReporter"></listener>
+        <listener class-name="org.testng.reporters.TestHTMLReporter"></listener>
+    </listeners>
+    <test name= " Test Run Amazon Uk">
+        <classes>
+            <class name="AnnotationsTest">
+                <methods>
+                    <include name="testOne"></include>
+                </methods>
+            </class>
+            <!--class name="LoginTest" /> -->
+        </classes>
+    </test>
+
+    <test name= " Test Run Amazon India">
+        <classes>
+            <class name="AnnotationsTest">
+                <methods>
+                    <include name="testOne"></include>
+                    <include name="testTwo"></include>
+                </methods>
+            </class>
+            <!--class name="LoginTest" /> -->
+        </classes>
+    </test>
+
+    <test name="TestNG Framework">
+        <classes>
+            <class name="LoginTest"/>
+
+        </classes>
+    </test>
+
+</suite>
+
