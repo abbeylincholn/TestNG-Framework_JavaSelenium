@@ -15,5 +15,5 @@ public class BaseTestAuth extends BaseTest{
     @BeforeMethod
     public void setup(){
         initialise();
-        performLogin();}
+        performLogin(); }
 }
